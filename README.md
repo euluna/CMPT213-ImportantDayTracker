@@ -52,8 +52,8 @@ The project is divided into two main components:
 
     **Command Line (Windows):**
 
-    ```powershell
-    cd userinterface
+    ```powecd userinterfacershell
+
 
     # Compile (if needed)
     javac -d bin -cp "lib/*;src" src/cmpt213/assignment/importantdaystracker/client/MainTrackerApplication.java src/cmpt213/assignment/importantdaystracker/view/*.java src/cmpt213/assignment/importantdaystracker/model/*.java src/cmpt213/assignment/importantdaystracker/control/*.java
