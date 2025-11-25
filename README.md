@@ -39,7 +39,8 @@ The project is divided into two main components:
 ### Running the Application
 
 1.  **Start the Server**:
-    Navigate to the `webappserver` directory and run the Spring Boot application.
+    Open a terminal, navigate to the `webappserver` directory, and run the Spring Boot application.
+    **Important:** Keep this terminal window open and running. Do not close it.
 
     ```bash
     cd webappserver
@@ -47,7 +48,20 @@ The project is divided into two main components:
     ```
 
 2.  **Run the Client**:
-    Navigate to the `userinterface` directory and run the client application.
+    Open a **new** terminal window (keep the server terminal running), navigate to the `userinterface` directory, and run the client.
+
+    **Command Line (Windows):**
+
+    ```powershell
+    cd userinterface
+
+    # Compile (if needed)
+    javac -d bin -cp "lib/*;src" src/cmpt213/assignment/importantdaystracker/client/MainTrackerApplication.java src/cmpt213/assignment/importantdaystracker/view/*.java src/cmpt213/assignment/importantdaystracker/model/*.java src/cmpt213/assignment/importantdaystracker/control/*.java
+
+    # Run
+    java -cp "bin;lib/*" cmpt213.assignment.importantdaystracker.client.MainTrackerApplication
+    ```
+
     _(Ensure the server is running before starting the client)_
 
 ## Author
