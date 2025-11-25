@@ -1,0 +1,141 @@
+Euluna Gotami (301635546)
+CMPT 213 - Assignment 2
+28/02/2025
+
+--------------------------------
+Scenario description:
+- Add an important day (with all valid inputs)
+- Add an important day (with all invalid inputs)
+- List all important days
+- Remove an important day (invalid input then valid input)
+- List all important days
+
+--------------------------------
+#####################
+# My Important Days #
+#####################
+Today is: 2025 Feb 28
+1: List all important days
+2: Add an important day
+3: Remove an important day
+4: List passed important days this year
+5: List upcoming important days this year
+6: List all important days of the same type
+7: Exit
+Choose an option by entering 1-7: 2
+Enter the type of important day to add (a: anniversary, b: birthday, o: occasion): a
+Enter the name of the important day: Wedding anniversary
+Enter the year of the important day (must not be before 1900):
+2020
+Enter the month of the important day (1-12): 5
+Enter the day of the important date (1-28/29/30/31): 20
+Enter the description of the important day: Wedding anniversary of Lisa and Paul
+Enter the location of the anniversary: Mars
+Wedding anniversary has been added to the list.
+
+#####################
+# My Important Days #
+#####################
+Today is: 2025 Feb 28
+1: List all important days
+2: Add an important day
+3: Remove an important day
+4: List passed important days this year
+5: List upcoming important days this year
+6: List all important days of the same type
+7: Exit
+Choose an option by entering 1-7: 2
+Enter the type of important day to add (a: anniversary, b: birthday, o: occasion): g
+Invalid input.
+Enter the type of important day to add (a: anniversary, b: birthday, o: occasion): o
+Enter the name of the important day:
+Name cannot be empty.
+Enter the name of the important day: World Cup
+Enter the year of the important day (must not be before 1900):
+1899
+Error: year must not be before 1900.
+Enter the year of the important day (must not be before 1900):
+2000
+Enter the month of the important day (1-12): 0
+Enter a value between 1 and 12.
+1
+Enter the day of the important date (1-28/29/30/31): 31
+Enter the description of the important day: Worldwide soccer game
+Enter the frequency of the occasion (must be 1 or more): -10
+Error: frequency must be 1 or more.
+4
+World Cup has been added to the list.
+
+#####################
+# My Important Days #
+#####################
+Today is: 2025 Feb 28
+1: List all important days
+2: Add an important day
+3: Remove an important day
+4: List passed important days this year
+5: List upcoming important days this year
+6: List all important days of the same type
+7: Exit
+Choose an option by entering 1-7: 1
+
+#1
+Important Day Type: Occasion
+World Cup on 2000 Jan 31
+Worldwide soccer game
+Frequency: every 4 years
+
+#2
+Important Day Type: Anniversary
+Wedding anniversary on 2020 May 20
+Wedding anniversary of Lisa and Paul
+Located at: Mars
+
+#####################
+# My Important Days #
+#####################
+Today is: 2025 Feb 28
+1: List all important days
+2: Add an important day
+3: Remove an important day
+4: List passed important days this year
+5: List upcoming important days this year
+6: List all important days of the same type
+7: Exit
+Choose an option by entering 1-7: 3
+
+#1
+Important Day Type: Occasion
+World Cup on 2000 Jan 31
+Worldwide soccer game
+Frequency: every 4 years
+
+#2
+Important Day Type: Anniversary
+Wedding anniversary on 2020 May 20
+Wedding anniversary of Lisa and Paul
+Located at: Mars
+
+Enter the item number you want to remove (0 to cancel):5
+Invalid input.
+Enter the item number you want to remove (0 to cancel):2
+Wedding anniversary has been removed from the list.
+
+#####################
+# My Important Days #
+#####################
+Today is: 2025 Feb 28
+1: List all important days
+2: Add an important day
+3: Remove an important day
+4: List passed important days this year
+5: List upcoming important days this year
+6: List all important days of the same type
+7: Exit
+Choose an option by entering 1-7: 1
+
+#1
+Important Day Type: Occasion
+World Cup on 2000 Jan 31
+Worldwide soccer game
+Frequency: every 4 years

@@ -1,0 +1,44 @@
+// Euluna Gotami (301635546)
+// CMPT 213 - Assignment 2
+// 28/02/2025
+
+Explanation of how my OOD works:
+
+Use Case 1: Adding important day to list
+----------------------------------------
+Steps:
+1. User selects option 2 from the menu (add day).
+2. The system asks the user for the type of the day.
+3. The user inputs the type.
+4. The system asks for the name, date, description, and additional information depending on the type.
+5. The user inputs the information.
+6. The system creates an instance of the specified type of day.
+7. The system adds the new day to the list.
+8. The system shows a confirmation message.
+
+Explanation:
+- The ImportantDaysTracker class handles the main application and user input and system output.
+- The ImportantDayFactory is used to create instances of the specific types of days.
+- The ImportantDay class is the parent class for all types of days.
+- The specific important day classes (Anniversary, Birthday, and Occasion) extend ImportantDay and override the toString method to output different specific information.
+
+Use Case 2: Listing passed days
+-------------------------------
+Steps:
+1. The user selects option 4 (passedImportantDays).
+2. The system goes through the list and prints the day if it occurs this year and has already passed.
+
+Explanation:
+- The ImportantDaysTracker class handles the main application and user input and system output.
+- The list of important days is stored in an ArrayList and is accessed directly to check each important day.
+- The ImportantDay class implements the Comparable interface, which allows the list to be sorted by date.
+- Each important day is displayed using its toString method, which is overridden in the specific important day classes (Anniversary, Birthday, Occasion) to provide specific details.
+- The passedImportantDays method iterates through the list of important days, checks if each day has passed, and prints the details if it has.
+
+Conclusion:
+-----------
+The design of the application follows the principles of Object-Oriented Design by using classes to separate and group related methods together. It allows inheritance and polymorphism, which makes it easy to extend and reuse code. Specifically, they are used in the specific important day types and the Comparable interface.
+
+This also makes it easier to maintain since only one class needs to be modified if needed.
+
+The Factory Method allows us to create more specific classes without cluttering the application.

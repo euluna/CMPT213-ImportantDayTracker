@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"cmpt213.assignment.importantdaystracker.webappserver"},{"l":"cmpt213.assignment.importantdaystracker.webappserver.control"},{"l":"cmpt213.assignment.importantdaystracker.webappserver.controllers"},{"l":"cmpt213.assignment.importantdaystracker.webappserver.model"}];updateSearchResults();

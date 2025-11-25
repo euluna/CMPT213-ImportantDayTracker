@@ -1,0 +1,68 @@
+Euluna Gotami (301635546)
+CMPT 213 - Assignment 4
+
+---------------------
+USER INTERFACE MANUAL
+---------------------
+
+---------------------------------
+Manual for Important Days Tracker
+---------------------------------
+
+Operation 1: List all important days
+------------------------------------
+When the user opens the program, the program will default to showing all the
+important days in the list. The user can trigger this as well by clicking on
+the "All" button on the top.
+
+When the list is empty it will show "No items to show."
+
+
+Operation 2: Add an important day
+---------------------------------
+The user is able to add an important day by clicking on the "Add an Important
+Day" button on the bottom of the program. A dialog box will show up with
+fields that the user can input values into.
+
+The extra information field is dynamic and will change according to the type
+of day the user inputs. "Location" for Anniversaries, "Name" for Birthdays,
+and "Frequency" for Occasions.
+
+Some fields cannot be empty. If the user attempts to submit empty fields, an
+error message will pop up asking the user to fill the specific fields. If
+frequency is below 1 an error message will pop up too.
+
+
+Operation 3: Remove an important day
+------------------------------------
+The user is able to remove an important day by clicking on the "Remove" button
+to the right of each important day.
+
+
+Operation 4: List passed important days this year
+---------------------------------------------------
+The user is able to filter the list to only show the passed important days this
+year by clicking on the "Passed this year" button on the top.
+
+When the list is empty, it shows the message “No passed important days to show.”
+
+
+Operation 5: List upcoming important days this year
+---------------------------------------------------
+The user is able to filter the list to only show the upcoming important days this
+year by clicking on the "Upcoming this year" button on the top.
+
+When the list is empty, it shows the message “No upcoming important days to show.”
+
+
+Operation 6: List all important days of the same type this year
+---------------------------------------------------------------
+The user is able to filter the list to only show the important days of a specific
+type in this year. The user can choose one of the radio buttons on the top. The
+user can filter to "Anniversary", "Birthday", or "Occasion.
+
+
+Operation 7: Exit
+-----------------
+The user can exit the program by clicking on the x button. The program will
+automatically send a request to the web application to save the file.

@@ -1,0 +1,42 @@
+Euluna Gotami (301635546)
+CMPT 213 - Assignment 4
+
+-------------
+CURL COMMANDS
+-------------
+
+Ping server
+curl http://localhost:8080/ping
+
+
+List all important days
+curl http://localhost:8080/listAll
+
+
+Add an important day
+curl -X POST http://localhost:8080/addDay -H "Content-Type: application/json" -d "{\"name\":\"Jeffrey's birthday\",\"description\":\"Jeffrey's birthday is this day\",\"date\":\"2021-04-22\",\"type\":\"b\",\"frequency\":"1",\"extraInfo\":\"Jeffrey\"}"
+
+
+Remove day
+curl -X POST http://localhost:8080/removeDay -H "Content-Type: application/json" -d "{\"name\":\"Jeffrey's birthday\",\"description\":\"Jeffrey's birthday is this day\",\"date\":\"2021-04-22\",\"type\":\"b\",\"frequency\":\"1\"}"
+
+
+List passed days list year
+curl http://localhost:8080/listPassedDaysThisYear
+
+
+List upcoming days this year
+curl http://localhost:8080/listUpcomingDaysThisYear
+
+
+List days this year (all types)
+curl http://localhost:8080/listDaysThisYear
+
+List days of type:
+Anniversary - curl http://localhost:8080/listDaysThisYearOfType?type=a
+Birthday - curl http://localhost:8080/listDaysThisYearOfType?type=b
+Occasion - curl http://localhost:8080/listDaysThisYearOfType?type=o
+
+
+Exit (save list)
+curl http://localhost:8080/exit
